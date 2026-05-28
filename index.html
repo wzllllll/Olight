@@ -99,8 +99,48 @@ body{margin:0;padding:0;font-family:-apple-system,BlinkMacSystemFont,"Microsoft 
 .footer{font-size:13px;padding:20px 14px}
 }
 </style>
+<!-- 百度统计 -->
+<script>
+var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "https://hm.baidu.com/hm.js?07a7b4e20489f5da0cb3398dddcdfec5";
+  var s = document.getElementsByTagName("script")[0];
+  s.parentNode.insertBefore(hm, s);
+})();
+</script>
 </head>
 <body>
+<!-- 微信浏览器引导提示 -->
+<div id="wxMask" style="display:none;position:fixed;top:0;left:0;right:0;bottom:0;background:rgba(0,0,0,0.88);z-index:99999;text-align:center;color:#fff;padding:20px;box-sizing:border-box">
+<div style="position:absolute;top:10px;right:20px;font-size:60px;animation:wxArrow 1.2s ease-in-out infinite">☝️</div>
+<div style="position:absolute;top:80px;right:15px;color:#ffeb3b;font-size:15px;font-weight:bold;background:rgba(255,235,59,0.15);padding:4px 10px;border-radius:6px;border:1px solid #ffeb3b">点这里</div>
+<div style="margin-top:35vh">
+<div style="font-size:50px;margin-bottom:20px">🌐</div>
+<div style="font-size:22px;font-weight:bold;margin-bottom:14px">请用浏览器打开</div>
+<div style="font-size:15px;line-height:1.8;opacity:0.9;max-width:300px;margin:0 auto">
+微信内部分链接无法跳转<br>
+请点击右上角「⋯」→<br>
+选择「在浏览器中打开」
+</div>
+<button onclick="document.getElementById('wxMask').style.display='none'" style="margin-top:36px;background:#fff;color:#1e3a5f;border:none;padding:11px 32px;border-radius:24px;font-size:14px;font-weight:600;cursor:pointer">我知道了，先看看</button>
+<div style="margin-top:14px;font-size:12px;opacity:0.6">关闭后部分功能可能受限</div>
+</div>
+</div>
+<style>
+@keyframes wxArrow{0%,100%{transform:translateY(0)}50%{transform:translateY(-12px)}}
+#wxTipBar{display:none;position:sticky;top:60px;background:#fff3cd;color:#856404;padding:10px 14px;text-align:center;font-size:13px;z-index:98;border-bottom:1px solid #ffc107;line-height:1.5}
+#wxTipBar a{color:#856404;text-decoration:underline;font-weight:600}
+#wxTipBar .close{float:right;cursor:pointer;font-weight:bold;padding:0 6px;opacity:0.6}
+</style>
+<div id="wxTipBar">⚠️ 微信内部分链接可能无法跳转，建议点右上角「⋯」→「在浏览器中打开」<span class="close" onclick="this.parentNode.style.display='none'">✕</span></div>
+<script>
+if(/MicroMessenger/i.test(navigator.userAgent)){
+document.getElementById('wxMask').style.display='block';
+document.getElementById('wxTipBar').style.display='block';
+}
+</script>
+
 <nav class="nav">
 <div class="nav-inner">
 <div class="nav-logo">傲雷校招</div>
