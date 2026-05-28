@@ -72,12 +72,31 @@ body{margin:0;padding:0;font-family:-apple-system,BlinkMacSystemFont,"Microsoft 
 .menu-toggle{display:block}
 .nav-links{display:none}
 .mobile-menu.active{display:block}
-.header{padding:100px 20px 60px}
-.stats{gap:30px}
-.grid{grid-template-columns:1fr}
+.header{padding:90px 16px 50px}
+.header h1{font-size:26px}
+.header p{font-size:14px}
+.stats{gap:30px;margin-top:28px}
+.stat-num{font-size:26px}
+.stat-label{font-size:13px}
+.main{padding:40px 14px}
+.section{margin-bottom:44px}
+.title{font-size:22px}
+.subtitle{font-size:14px;margin-bottom:28px}
+.card{padding:18px}
+.grid{grid-template-columns:1fr !important;gap:18px}
+.training{padding:24px 16px;margin-top:28px}
+.training h3{font-size:18px;margin-bottom:20px}
 .training-grid{grid-template-columns:1fr}
-.campus{flex-direction:column}
+.training > div[style*="grid-template-columns"]{grid-template-columns:1fr !important}
+.campus{flex-direction:column;gap:14px;padding:20px}
 .contact-grid{flex-direction:column;gap:20px}
+.process{margin-left:14px;padding-left:22px}
+.process-item{padding:12px 0}
+.process-dot{left:-30px}
+.process-dot.green{left:-33px}
+#jobs .btn{flex:1 1 100%;padding:13px 20px;font-size:15px}
+#rewards .grid > div[style*="grid-template-columns:88px"]{grid-template-columns:64px 1fr 56px}
+.footer{font-size:13px;padding:20px 14px}
 }
 </style>
 </head>
@@ -182,7 +201,7 @@ body{margin:0;padding:0;font-family:-apple-system,BlinkMacSystemFont,"Microsoft 
 <section class="section" id="benefits">
 <h2 class="title">薪资福利与成长路径</h2>
 <p class="subtitle">高激励薪酬 + 全方位福利 + 多元成长通道</p>
-<div class="grid" style="grid-template-columns:1fr 1fr">
+<div class="grid" style="grid-template-columns:repeat(auto-fit,minmax(300px,1fr))">
 <div class="card">
 <div style="display:flex;align-items:center;gap:12px;margin-bottom:18px">
 <div style="font-size:32px">💰</div>
@@ -212,7 +231,7 @@ body{margin:0;padding:0;font-family:-apple-system,BlinkMacSystemFont,"Microsoft 
 </div>
 <div class="training">
 <h3>🛤️ 多元成长路径</h3>
-<div style="display:grid;grid-template-columns:repeat(2,1fr);gap:20px">
+<div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:20px">
 <div style="padding:22px;background:#f5f8ff;border-radius:10px;border-left:4px solid #2563eb">
 <div style="font-size:17px;font-weight:bold;color:#1a56db;margin-bottom:10px">"多通道" 职业发展</div>
 <p style="color:#555;font-size:14px;line-height:1.7;margin:0">设置"管理 & 技术"双职业发展通道</p>
@@ -246,7 +265,7 @@ body{margin:0;padding:0;font-family:-apple-system,BlinkMacSystemFont,"Microsoft 
 <section class="section" id="rewards">
 <h2 class="title">🎁 有奖活动</h2>
 <p class="subtitle">参与即有惊喜，多份傲雷明星产品等你来拿</p>
-<div class="grid" style="grid-template-columns:1fr 1fr">
+<div class="grid" style="grid-template-columns:repeat(auto-fit,minmax(320px,1fr))">
 
 <div class="card" style="background:linear-gradient(135deg,#fff8e1,#ffe0b2);border:1px solid #ffb74d">
 <div style="display:flex;align-items:center;gap:14px;margin-bottom:16px">
