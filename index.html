@@ -18,103 +18,95 @@ body{margin:0;padding:0;font-family:-apple-system,BlinkMacSystemFont,"Microsoft 
 .header h1{font-size:36px;margin-bottom:12px}
 .header p{font-size:18px;opacity:0.9}
 .stats{display:flex;justify-content:center;gap:60px;margin-top:40px;flex-wrap:wrap}
-.stats>div{text-align:center}
 .stat-num{font-size:32px;font-weight:bold}
 .stat-label{font-size:14px;opacity:0.8}
-.container{max-width:1200px;margin:0 auto;padding:40px 20px}
-.section{background:#fff;border-radius:12px;padding:40px;margin-bottom:30px;box-shadow:0 1px 3px rgba(0,0,0,0.08)}
-.section h2{color:#1e3a5f;margin-top:0;font-size:24px;text-align:center;margin-bottom:30px}
-.job-tags{display:flex;flex-wrap:wrap;gap:10px;justify-content:center;margin-bottom:30px}
-.job-tag{padding:10px 20px;background:#eef2ff;color:#1a56db;border-radius:20px;font-size:14px;cursor:pointer;border:none;font-weight:500;transition:all 0.2s}
-.job-tag:hover,.job-tag.active{background:#1a56db;color:#fff}
-.job-list{display:none;flex-wrap:wrap;gap:12px;justify-content:center;margin-bottom:20px}
-.job-list.active{display:flex}
-.job-item{padding:8px 16px;border:1px solid #ddd;border-radius:20px;font-size:13px;cursor:pointer;transition:all 0.2s}
-.job-item:hover,.job-item.selected{background:#1a56db;color:#fff;border-color:#1a56db}
-.btn{display:inline-block;padding:12px 30px;background:#1a56db;color:#fff;border-radius:25px;text-decoration:none;font-weight:500;text-align:center;transition:all 0.2s;border:none;cursor:pointer;font-size:16px}
-.btn:hover{background:#1e3a8a}
-.btn-group{display:flex;gap:16px;justify-content:center;margin-top:20px;flex-wrap:wrap}
-.highlight-card{background:#fffbeb;border:2px solid #fbbf24}
-.process{display:flex;flex-direction:column;gap:16px;position:relative;padding-left:30px}
-.process::before{content:'';position:absolute;left:7px;top:0;bottom:0;width:2px;background:#e5e7eb}
-.process-item{position:relative;padding:12px 16px;background:#f9fafb;border-radius:8px}
-.process-dot{width:16px;height:16px;border-radius:50%;background:#1a56db;position:absolute;left:-30px;top:16px;border:3px solid #fff;box-shadow:0 0 0 2px #1a56db}
-.process-dot.green{background:#16a34a;box-shadow:0 0 0 2px #16a34a}
-.process-date{font-size:13px;color:#1a56db;font-weight:600;margin-bottom:4px}
-.process-date.green{color:#16a34a}
+.main{max-width:1200px;margin:0 auto;padding:60px 20px}
+.section{margin-bottom:60px}
+.title{text-align:center;font-size:28px;color:#1e3a5f;margin-bottom:12px}
+.subtitle{text-align:center;color:#666;margin-bottom:40px}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(340px,1fr));gap:24px}
+.card{background:#fff;border-radius:12px;padding:24px;box-shadow:0 1px 3px rgba(0,0,0,0.08)}
+.card-title{font-size:20px;font-weight:bold;color:#1a56db;margin-bottom:12px}
+.card-tag{display:inline-block;background:#e8f0fe;padding:4px 10px;border-radius:4px;font-size:12px;color:#1a56db;margin-right:8px}
+.info-row{display:flex;margin-bottom:8px;font-size:14px}
+.info-label{font-weight:600;color:#333;width:70px}
+.info-value{color:#666}
+.highlight-card{background:linear-gradient(135deg,#e8f5e9,#c8e6c9);border:1px solid #4caf50}
+.highlight-card .card-title{color:#2e7d32}
+.process{margin-left:20px;border-left:3px solid #ddd;padding-left:30px}
+.process-item{position:relative;padding:16px 0}
+.process-dot{position:absolute;left:-39px;top:20px;width:14px;height:14px;background:#1a56db;border-radius:50%}
+.process-dot.green{background:#4caf50;left:-42px;width:20px;height:20px;top:18px}
+.process-date{font-weight:bold;color:#1a56db;margin-bottom:4px}
+.process-date.green{color:#2e7d32}
 .process-title{font-weight:600;margin-bottom:4px}
 .process-desc{font-size:14px;color:#666}
-.footer{background:#1e3a5f;color:#fff;text-align:center;padding:30px 20px;font-size:14px}
-.footer a{color:#93c5fd}
-.campus-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:20px}
-.campus{background:#f9fafb;padding:20px;border-radius:10px;display:flex;gap:12px}
-.campus-icon{font-size:24px;flex-shrink:0;line-height:1.4}
-.campus h4{margin:0 0 8px;color:#1e3a5f;font-size:16px}
-.campus p{margin:4px 0;font-size:14px;color:#666}
-.intro-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:16px;margin:24px 0}
-.intro-card{background:linear-gradient(135deg,#eef2ff,#dbeafe);padding:24px 20px;border-radius:10px;text-align:center}
-.intro-card .num{font-size:36px;font-weight:bold;color:#1a56db;display:block}
-.intro-card .label{font-size:14px;color:#666;margin-top:4px;display:block}
-.tag-list{display:flex;flex-wrap:wrap;gap:10px;justify-content:center;margin-top:8px}
-.tag{padding:6px 14px;border-radius:16px;font-size:13px;font-weight:500}
-.tag.blue{background:#dbeafe;color:#1e40af}
-.tag.yellow{background:#fef3c7;color:#92400e}
-.tag.green{background:#dcfce7;color:#166534}
-.tag.red{background:#fee2e2;color:#991b1b}
-.tag.purple{background:#ede9fe;color:#5b21b6}
-.benefits-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:16px;margin-top:20px}
-.benefit-card{padding:20px;border-radius:10px;border:2px solid}
-.benefit-card.left{border-color:#1a56db;background:#f0f5ff}
-.benefit-card.right{border-color:#16a34a;background:#f0fdf4}
-.benefit-card h4{font-size:16px;margin:0 0 12px;padding-bottom:8px;border-bottom:1px solid rgba(0,0,0,0.1)}
-.benefit-card.left h4{color:#1a56db}
-.benefit-card.right h4{color:#16a34a}
-.benefit-list{list-style:none;padding:0;margin:0;display:flex;flex-direction:column;gap:8px}
-.benefit-list li{font-size:14px;padding-left:20px;position:relative;color:#555}
-.benefit-list li::before{content:'✓';position:absolute;left:0;color:inherit;font-weight:bold}
-.benefit-card.left .benefit-list li::before{color:#1a56db}
-.benefit-card.right .benefit-list li::before{color:#16a34a}
-.training-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:16px;margin-top:20px}
-.training-card{padding:20px 20px 20px 24px;border-radius:10px;border-left:4px solid #1a56db;background:#f9fafb}
-.training-card h4{font-size:15px;margin:0 0 8px;color:#1a56db}
-.training-card p{font-size:13px;margin:0;color:#666;line-height:1.6}
-#about,#benefits,#training{margin-top:0}
+.benefit{text-align:center;padding:32px 20px;background:#fff;border-radius:12px}
+.benefit-icon{font-size:40px;margin-bottom:12px}
+.benefit-title{font-size:18px;font-weight:bold;color:#333;margin-bottom:8px}
+.benefit-value{font-size:24px;font-weight:bold;color:#1a56db;margin-bottom:8px}
+.benefit-desc{font-size:14px;color:#666}
+.training{background:#fff;border-radius:12px;padding:40px;margin-top:40px}
+.training h3{text-align:center;font-size:22px;margin-bottom:30px}
+.training-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:24px;text-align:center}
+.training-year{display:inline-block;background:#1a56db;color:#fff;padding:4px 16px;border-radius:20px;font-weight:600;margin-bottom:12px}
+.campus{display:flex;gap:20px;background:#fff;border-radius:12px;padding:24px}
+.campus-icon{font-size:32px;width:50px;height:50px;background:#f5f5f5;border-radius:10px;display:flex;align-items:center;justify-content:center;flex-shrink:0}
+.campus h4{font-size:18px;color:#333;margin-bottom:8px}
+.campus p{font-size:14px;color:#666;margin:4px 0}
+.campus strong{color:#1a56db}
+.contact{background:#1e3a5f;color:#fff;text-align:center;padding:60px 20px}
+.contact h2{font-size:28px;margin-bottom:12px}
+.contact-grid{display:flex;justify-content:center;gap:60px;margin-top:40px;flex-wrap:wrap}
+.contact-item{padding:20px}
+.contact-icon{font-size:36px;margin-bottom:12px}
+.contact-label{font-size:14px;opacity:0.8;margin-bottom:8px}
+.contact-value{font-size:18px;font-weight:600}
+.btn{display:inline-block;background:#2563eb;color:#fff;padding:12px 32px;border-radius:8px;text-decoration:none;font-weight:600;margin-top:30px}
+.btn:hover{background:#1d4ed8}
+.footer{background:#1e3a5f;color:#fff;text-align:center;padding:24px;font-size:14px;opacity:0.8}
+.mobile-menu{display:none;position:fixed;top:60px;left:0;right:0;background:#fff;box-shadow:0 4px 12px rgba(0,0,0,0.1);padding:16px;z-index:99}
+.mobile-menu a{display:block;padding:12px 0;color:#333;text-decoration:none;border-bottom:1px solid #eee}
+.mobile-menu a:last-child{border-bottom:none}
 @media(max-width:768px){
-.nav-links{display:none;flex-direction:column;position:absolute;top:60px;left:0;right:0;background:#fff;padding:16px;box-shadow:0 2px 8px rgba(0,0,0,0.1)}
-.nav-links.show{display:flex}
 .menu-toggle{display:block}
+.nav-links{display:none}
+.mobile-menu.active{display:block}
+.header{padding:100px 20px 60px}
 .stats{gap:30px}
-.section{padding:24px 16px}
-.job-tags{gap:8px}
-.job-tag{padding:8px 14px;font-size:13px}
-.benefits-grid,.training-grid,.intro-grid{grid-template-columns:1fr}
+.grid{grid-template-columns:1fr}
+.training-grid{grid-template-columns:1fr}
+.campus{flex-direction:column}
+.contact-grid{flex-direction:column;gap:20px}
 }
 </style>
 </head>
 <body>
 <nav class="nav">
 <div class="nav-inner">
-<div class="nav-logo">傲雷 Olight</div>
-<div style="display:flex;align-items:center;gap:16px">
-<div class="nav-links" id="navLinks">
-<a href="#about" onclick="toggleMenu()">关于我们</a>
-<a href="#benefits" onclick="toggleMenu()">薪资福利</a>
-<a href="#training" onclick="toggleMenu()">成长路径</a>
-<a href="#process" onclick="toggleMenu()">校招流程</a>
-<a href="#campus" onclick="toggleMenu()">宣讲会</a>
-<a href="jobs.html" onclick="toggleMenu()">查看岗位</a>
+<div class="nav-logo">傲雷校招</div>
+<div class="nav-links">
+<a href="#about">企业简介</a>
+<a href="#jobs">招聘岗位</a>
+<a href="#process">校招流程</a>
+<a href="#benefits">薪资福利</a>
+<a href="#campus">宣讲会</a>
+<a href="#rewards">有奖活动</a>
+<a href="#footer">联系方式</a>
 </div>
 <button class="menu-toggle" onclick="toggleMenu()">☰</button>
 </div>
-</div>
 </nav>
-<script>
-function toggleMenu(){const n=document.getElementById('navLinks');n.classList.toggle('show')}
-document.querySelectorAll('a[href^="#"]').forEach(a=>{a.addEventListener('click',function(e){e.preventDefault();const t=document.querySelector(this.getAttribute('href'));if(t){t.scrollIntoView({behavior:'smooth',block:'start'})}})})
-const tags=document.querySelectorAll('.job-tag');
-tags.forEach(tag=>{tag.addEventListener('click',function(){tags.forEach(t=>t.classList.remove('active'));this.classList.add('active');const target=this.dataset.target;document.querySelectorAll('.job-list').forEach(l=>l.classList.remove('active'));document.getElementById(target).classList.add('active')}});
-document.querySelectorAll('.job-item').forEach(item=>{item.addEventListener('click',function(){document.querySelectorAll('.job-item').forEach(i=>i.classList.remove('selected'));this.classList.add('selected')})});
-</script>
+<div class="mobile-menu" id="mobileMenu">
+<a href="#about" onclick="toggleMenu()">企业简介</a>
+<a href="#jobs" onclick="toggleMenu()">招聘岗位</a>
+<a href="#process" onclick="toggleMenu()">校招流程</a>
+<a href="#benefits" onclick="toggleMenu()">薪资福利</a>
+<a href="#campus" onclick="toggleMenu()">宣讲会</a>
+<a href="#rewards" onclick="toggleMenu()">有奖活动</a>
+<a href="#footer" onclick="toggleMenu()">联系方式</a>
+</div>
+
 <header class="header">
 <h1>加入傲雷，照亮世界</h1>
 <p>全球高端移动照明品牌，诚邀优秀应届生加入核心岗位团队</p>
@@ -123,80 +115,61 @@ document.querySelectorAll('.job-item').forEach(item=>{item.addEventListener('cli
 <div><div class="stat-num">29</div><div class="stat-label">核心岗位</div></div>
 </div>
 </header>
-<main>
-<section id="about" class="section">
-<h2>企业简介</h2>
-<p style="text-align:center;max-width:800px;margin:0 auto 24px;font-size:15px;color:#555;line-height:1.8">
-深圳市傲雷电商科技股份有限公司创立于2007年，是一家专注于户外移动照明设备研发、生产与销售的国家级高新技术企业。傲雷产品销往100多个国家和地区，全球用户超过1200万，致力于为用户创造更安全、更智能、更精彩的户外照明体验。
-</p>
-<div class="intro-grid">
-<div class="intro-card"><span class="num">19年+</span><span class="label">行业深耕</span></div>
-<div class="intro-card"><span class="num">100+</span><span class="label">覆盖国家</span></div>
-<div class="intro-card"><span class="num">1200万+</span><span class="label">全球用户</span></div>
-<div class="intro-card"><span class="num">CNAS</span><span class="label">国家级认证实验室</span></div>
+
+<main class="main">
+<section class="section" id="about">
+<h2 class="title">企业简介</h2>
+<p class="subtitle">全球高端移动照明领导品牌</p>
+<div class="card" style="margin-bottom:20px">
+<p style="color:#444;font-size:15px;line-height:1.85;margin:0">Olight 源于 2007 年，总部坐落于中国中山，是以技术创新为驱动的世界移动照明知名企业。产品覆盖户外手电、EDC 手电、战术照明灯、氛围灯、轨道灯、电池充电器等，致力于为户外爱好者、现代探险家等不同用户提供可靠的移动照明工具和独特体验，同时也为消防、应急等各需求企业提供行业照明方案。</p>
 </div>
-<div class="tag-list">
-<span class="tag blue">国家级高新技术企业</span>
-<span class="tag blue">CNAS认证实验室</span>
-<span class="tag blue">深圳直通车企业</span>
-<span class="tag yellow">德国红点设计大奖</span>
-<span class="tag yellow">iF设计奖</span>
-<span class="tag yellow">IDEA美国工业设计奖</span>
-<span class="tag yellow">CES创新奖</span>
-<span class="tag yellow">G-Mark日本优良设计奖</span>
-<span class="tag green">100+国家和地区销售</span>
-<span class="tag green">全球1200万用户</span>
-<span class="tag purple">深圳知名品牌</span>
+<div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:16px;margin-bottom:20px">
+<div style="background:#fff;border-radius:12px;padding:24px 16px;text-align:center;box-shadow:0 1px 3px rgba(0,0,0,0.08)"><div style="font-size:28px;font-weight:bold;color:#1a56db">19年+</div><div style="font-size:13px;color:#666;margin-top:6px">品牌运营及体系经验</div></div>
+<div style="background:#fff;border-radius:12px;padding:24px 16px;text-align:center;box-shadow:0 1px 3px rgba(0,0,0,0.08)"><div style="font-size:28px;font-weight:bold;color:#1a56db">100+</div><div style="font-size:13px;color:#666;margin-top:6px">全球销售分销渠道及国家</div></div>
+<div style="background:#fff;border-radius:12px;padding:24px 16px;text-align:center;box-shadow:0 1px 3px rgba(0,0,0,0.08)"><div style="font-size:28px;font-weight:bold;color:#1a56db">1200+</div><div style="font-size:13px;color:#666;margin-top:6px">专利 / 600+ 权威认证 / 300+ 软著</div></div>
+<div style="background:#fff;border-radius:12px;padding:24px 16px;text-align:center;box-shadow:0 1px 3px rgba(0,0,0,0.08)"><div style="font-size:28px;font-weight:bold;color:#1a56db">CNAS</div><div style="font-size:13px;color:#666;margin-top:6px">国内户外移动照明行业首个 CNAS 认证品牌</div></div>
 </div>
-</section>
-<section id="benefits" class="section">
-<h2>薪资福利</h2>
-<div class="benefits-grid">
-<div class="benefit-card left">
-<h4>「高激励」薪资</h4>
-<ul class="benefit-list">
-<li>具有竞争力的薪酬体系，匹配市场水平</li>
-<li>透明清晰的晋升调薪机制，每半年一次评估</li>
-<li>年度绩效奖金，分享公司成长红利</li>
-</ul>
-</div>
-<div class="benefit-card right">
-<h4>「全方位」福利</h4>
-<ul class="benefit-list">
-<li>免费食宿：宿舍空调/热水器/高速WiFi全配套</li>
-<li>五险一金：入职即购买，公积金按最高比例缴纳</li>
-<li>带薪假期：法定节假日、年假、婚假、产假等</li>
-<li>年度体检：关注每一位员工的身体健康</li>
-<li>节日福利：生日礼物、节日礼品、开工红包</li>
-<li>丰富团建：年度旅游、部门团建、员工俱乐部</li>
-<li>完善培训：入职培训/专业技能/管理能力全方位覆盖</li>
-</ul>
+<div class="card">
+<div style="font-size:15px;font-weight:600;color:#1e3a5f;margin-bottom:14px">🏆 荣誉与资质</div>
+<div style="display:flex;flex-wrap:wrap;gap:10px">
+<span style="background:#e8f0fe;color:#1a56db;padding:6px 14px;border-radius:6px;font-size:13px">2024 中国出海品牌百强榜</span>
+<span style="background:#e8f0fe;color:#1a56db;padding:6px 14px;border-radius:6px;font-size:13px">2023 中国 LED 照明灯饰行业百强榜</span>
+<span style="background:#e8f0fe;color:#1a56db;padding:6px 14px;border-radius:6px;font-size:13px">湾区知名品牌</span>
+<span style="background:#e8f0fe;color:#1a56db;padding:6px 14px;border-radius:6px;font-size:13px">深圳知名品牌</span>
+<span style="background:#e8f0fe;color:#1a56db;padding:6px 14px;border-radius:6px;font-size:13px">广东省知识产权示范企业</span>
+<span style="background:#e8f0fe;color:#1a56db;padding:6px 14px;border-radius:6px;font-size:13px">国家高新技术企业</span>
+<span style="background:#fef3c7;color:#92400e;padding:6px 14px;border-radius:6px;font-size:13px">iF 设计奖</span>
+<span style="background:#fef3c7;color:#92400e;padding:6px 14px;border-radius:6px;font-size:13px">红点设计奖</span>
+<span style="background:#fef3c7;color:#92400e;padding:6px 14px;border-radius:6px;font-size:13px">CES 创新奖</span>
+<span style="background:#fef3c7;color:#92400e;padding:6px 14px;border-radius:6px;font-size:13px">法国设计奖</span>
+<span style="background:#dcfce7;color:#15803d;padding:6px 14px;border-radius:6px;font-size:13px">全球首家手电筒体验店</span>
 </div>
 </div>
 </section>
-<section id="training" class="section">
-<h2>成长路径</h2>
-<div class="training-grid">
-<div class="training-card">
-<h4>多通道职业发展</h4>
-<p>专业序列与管理序列双通道并行，清晰描绘技术专家与团队管理者的职业成长路径，找到最适合你的发展方向</p>
+
+<section class="section" id="jobs">
+<h2 class="title">核心招聘岗位</h2>
+<p class="subtitle">覆盖 8 大事业部 / 中心，29 个核心岗位虚位以待</p>
+<div style="background:#fff;border-radius:12px;padding:40px 28px;box-shadow:0 1px 3px rgba(0,0,0,0.08);text-align:center">
+<div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(160px,1fr));gap:18px;margin-bottom:32px">
+<div style="padding:14px 8px;background:#f5f8ff;border-radius:8px"><div style="font-size:24px;margin-bottom:4px">🌍</div><div style="font-size:14px;color:#1e3a5f;font-weight:600">海外销售</div></div>
+<div style="padding:14px 8px;background:#f5f8ff;border-radius:8px"><div style="font-size:24px;margin-bottom:4px">📦</div><div style="font-size:14px;color:#1e3a5f;font-weight:600">亚马逊运营</div></div>
+<div style="padding:14px 8px;background:#f5f8ff;border-radius:8px"><div style="font-size:24px;margin-bottom:4px">🔬</div><div style="font-size:14px;color:#1e3a5f;font-weight:600">产品研发</div></div>
+<div style="padding:14px 8px;background:#f5f8ff;border-radius:8px"><div style="font-size:24px;margin-bottom:4px">📣</div><div style="font-size:14px;color:#1e3a5f;font-weight:600">市场营销</div></div>
+<div style="padding:14px 8px;background:#f5f8ff;border-radius:8px"><div style="font-size:24px;margin-bottom:4px">🛡️</div><div style="font-size:14px;color:#1e3a5f;font-weight:600">品质供应</div></div>
+<div style="padding:14px 8px;background:#f5f8ff;border-radius:8px"><div style="font-size:24px;margin-bottom:4px">💼</div><div style="font-size:14px;color:#1e3a5f;font-weight:600">职能支持</div></div>
 </div>
-<div class="training-card">
-<h4>多元化流动机制</h4>
-<p>跨部门轮岗、项目历练、跨区域外派等多元流动机制，打破壁垒，持续拓展职业发展的宽度与深度</p>
-</div>
-<div class="training-card">
-<h4>多维度人才培养</h4>
-<p>入职培训/通用技能/专业技能/管理能力分层培养体系，结合导师制，理论与实战并重，全面加速你的成长</p>
-</div>
-<div class="training-card">
-<h4>多渠道自我提升</h4>
-<p>在线学习平台、外部培训资助、行业会议参与、学历提升支持，多渠道助力持续精进与突破</p>
+<p style="color:#666;font-size:15px;margin:0 0 24px">每个岗位都有清晰的成长路径和发展空间，点击下方按钮查看完整岗位职责与任职要求</p>
+<div style="display:flex;gap:16px;justify-content:center;flex-wrap:wrap">
+<a href="jobs.html" class="btn" style="margin-top:0;font-size:16px;padding:14px 40px">查看岗位详情 →</a>
+<a href="mailto:1071741990@qq.com" class="btn" style="margin-top:0;font-size:16px;padding:14px 40px;background:#16a34a">立即投递简历</a>
 </div>
 </div>
 </section>
-<section id="process" class="section">
-<h2>校招流程</h2>
+
+<section class="section" id="process">
+<h2 class="title">校招流程</h2>
+<p class="subtitle">清晰的选拔路径，让你心中有数</p>
 <div class="process">
 <div class="process-item"><div class="process-dot"></div><div class="process-date">5月 - 6月</div><div class="process-title">网申投递</div><div class="process-desc">在线投递简历，选择意向岗位</div></div>
 <div class="process-item"><div class="process-dot"></div><div class="process-date">6月初</div><div class="process-title">简历筛选</div><div class="process-desc">HR团队认真审核每一份简历</div></div>
@@ -204,45 +177,160 @@ document.querySelectorAll('.job-item').forEach(item=>{item.addEventListener('cli
 <div class="process-item"><div class="process-dot"></div><div class="process-date">6月中下旬</div><div class="process-title">综合面试</div><div class="process-desc">专业面试 + HR面试</div></div>
 <div class="process-item"><div class="process-dot"></div><div class="process-date">6月底</div><div class="process-title">Offer发放</div><div class="process-desc">发放录用通知书，签订三方协议</div></div>
 </div>
-<div class="btn-group">
-<a href="jobs.html" class="btn">查看岗位详情 →</a>
-<a href="mailto:1071741990@qq.com" class="btn" style="background:#16a34a">立即投递简历</a>
+</section>
+
+<section class="section" id="benefits">
+<h2 class="title">薪资福利与成长路径</h2>
+<p class="subtitle">高激励薪酬 + 全方位福利 + 多元成长通道</p>
+<div class="grid" style="grid-template-columns:1fr 1fr">
+<div class="card">
+<div style="display:flex;align-items:center;gap:12px;margin-bottom:18px">
+<div style="font-size:32px">💰</div>
+<div style="font-size:20px;font-weight:bold;color:#1a56db">"高激励" 薪资</div>
+</div>
+<ul style="list-style:none;padding:0;margin:0">
+<li style="padding:10px 0;border-bottom:1px dashed #eee;color:#444;font-size:14px;line-height:1.7">▸ 提供具有竞争力的薪资</li>
+<li style="padding:10px 0;border-bottom:1px dashed #eee;color:#444;font-size:14px;line-height:1.7">▸ 每年 1-2 次调薪机会</li>
+<li style="padding:10px 0;color:#444;font-size:14px;line-height:1.7">▸ 享受季度/年度评优、绩效奖、项目奖、战功奖等，优秀者有机会获股权激励</li>
+</ul>
+</div>
+<div class="card">
+<div style="display:flex;align-items:center;gap:12px;margin-bottom:18px">
+<div style="font-size:32px">🎁</div>
+<div style="font-size:20px;font-weight:bold;color:#1a56db">"全方位" 福利</div>
+</div>
+<ul style="list-style:none;padding:0;margin:0">
+<li style="padding:8px 0;border-bottom:1px dashed #eee;color:#444;font-size:14px;line-height:1.7">▸ 公司公寓拎包入住</li>
+<li style="padding:8px 0;border-bottom:1px dashed #eee;color:#444;font-size:14px;line-height:1.7">▸ 提供餐费补贴、加班打车报销</li>
+<li style="padding:8px 0;border-bottom:1px dashed #eee;color:#444;font-size:14px;line-height:1.7">▸ 统一缴纳一档社保</li>
+<li style="padding:8px 0;border-bottom:1px dashed #eee;color:#444;font-size:14px;line-height:1.7">▸ 享受法定带薪休假及超长春节假期</li>
+<li style="padding:8px 0;border-bottom:1px dashed #eee;color:#444;font-size:14px;line-height:1.7">▸ 不定期公费旅游团建</li>
+<li style="padding:8px 0;border-bottom:1px dashed #eee;color:#444;font-size:14px;line-height:1.7">▸ 生日/节日/入职周年/结婚/生育好礼发放</li>
+<li style="padding:8px 0;color:#444;font-size:14px;line-height:1.7">▸ 幸福基金、幸福工程暖心守护</li>
+</ul>
+</div>
+</div>
+<div class="training">
+<h3>🛤️ 多元成长路径</h3>
+<div style="display:grid;grid-template-columns:repeat(2,1fr);gap:20px">
+<div style="padding:22px;background:#f5f8ff;border-radius:10px;border-left:4px solid #2563eb">
+<div style="font-size:17px;font-weight:bold;color:#1a56db;margin-bottom:10px">"多通道" 职业发展</div>
+<p style="color:#555;font-size:14px;line-height:1.7;margin:0">设置"管理 & 技术"双职业发展通道</p>
+</div>
+<div style="padding:22px;background:#f5f8ff;border-radius:10px;border-left:4px solid #2563eb">
+<div style="font-size:17px;font-weight:bold;color:#1a56db;margin-bottom:10px">"多元化" 流动机制</div>
+<p style="color:#555;font-size:14px;line-height:1.7;margin:0">建立竞岗、轮岗的流动机制，可通过内部人才市场灵活实现跨专业流动</p>
+</div>
+<div style="padding:22px;background:#f5f8ff;border-radius:10px;border-left:4px solid #2563eb">
+<div style="font-size:17px;font-weight:bold;color:#1a56db;margin-bottom:10px">"多维度" 人才培养</div>
+<p style="color:#555;font-size:14px;line-height:1.7;margin:0">1v1 导师带教、新员工培训、后备人才/管理人员培养等，助你快速实现蜕变</p>
+</div>
+<div style="padding:22px;background:#f5f8ff;border-radius:10px;border-left:4px solid #2563eb">
+<div style="font-size:17px;font-weight:bold;color:#1a56db;margin-bottom:10px">"多渠道" 自我提升</div>
+<p style="color:#555;font-size:14px;line-height:1.7;margin:0">藏经阁图书免费借阅、行业大咖分享、素质定向公开课、高额教育培训补贴……</p>
+</div>
+</div>
 </div>
 </section>
-<section id="campus" class="section">
-<h2>宣讲会与院校信息</h2>
-<div class="campus-grid">
-<div class="campus">
-<div class="campus-icon">🎓</div>
+
+<section class="section" id="campus">
+<h2 class="title">宣讲会与院校信息</h2>
+<p class="subtitle">期待与你面对面交流</p>
+<div class="grid">
+<div class="campus"><div class="campus-icon">🎓</div><div><h4>校园宣讲会</h4><p><strong>时间：</strong>6月11日</p><p><strong>地点：</strong>各目标院校宣讲厅</p><p><strong>内容：</strong>企业介绍、岗位详解、现场答疑</p></div></div>
+<div class="campus"><div class="campus-icon">🔦</div><div><h4>产品体验区</h4><p><strong>时间：</strong>6月11日宣讲会同步开放</p><p><strong>内容：</strong>旗舰手电、球泡灯等明星产品现场试玩</p><p><strong>亮点：</strong>真实户外场景演示，研发同事现场答疑</p></div></div>
+<div class="campus"><div class="campus-icon">📍</div><div><h4>目标院校</h4><p><strong>专业范围：</strong>不限专业方向，理工、商科、设计、文科等均可</p><p><strong>院校范围：</strong>全国各类本科及以上院校，欢迎对照明行业感兴趣的同学</p></div></div>
+</div>
+</section>
+
+<section class="section" id="rewards">
+<h2 class="title">🎁 有奖活动</h2>
+<p class="subtitle">参与即有惊喜，多份傲雷明星产品等你来拿</p>
+<div class="grid" style="grid-template-columns:1fr 1fr">
+
+<div class="card" style="background:linear-gradient(135deg,#fff8e1,#ffe0b2);border:1px solid #ffb74d">
+<div style="display:flex;align-items:center;gap:14px;margin-bottom:16px">
+<div style="font-size:36px">📣</div>
 <div>
-<h4>校园宣讲会</h4>
-<p><strong>时间：</strong>6月11日</p>
-<p><strong>地点：</strong>各目标院校宣讲厅</p>
-<p><strong>内容：</strong>企业介绍、岗位详解、现场答疑</p>
+<div style="font-size:20px;font-weight:bold;color:#e65100">集赞活动</div>
+<div style="font-size:13px;color:#bf360c;margin-top:2px">宣讲会现场兑换</div>
 </div>
 </div>
-<div class="campus">
-<div class="campus-icon">🔦</div>
+<p style="font-size:14px;color:#5d4037;margin:0 0 16px;line-height:1.75">
+<strong>参与方式：</strong>转发指定推文至朋友圈集赞，宣讲会当天现场凭朋友圈截图兑换礼品。<strong style="color:#d84315">先到先得，兑完即止。</strong>
+</p>
+<div style="background:#fff;border-radius:8px;overflow:hidden;box-shadow:0 1px 3px rgba(0,0,0,0.06)">
+<div style="display:grid;grid-template-columns:88px 1fr 72px;background:#ff9800;color:#fff;font-size:13px;font-weight:600">
+<div style="padding:10px 12px;text-align:center">点赞数</div>
+<div style="padding:10px 12px">礼品</div>
+<div style="padding:10px 12px;text-align:center">限量</div>
+</div>
+<div style="display:grid;grid-template-columns:88px 1fr 72px;font-size:14px;border-bottom:1px solid #ffe0b2">
+<div style="padding:12px;text-align:center;font-weight:bold;color:#e65100">18 赞</div>
+<div style="padding:12px;color:#444">I3E 手电</div>
+<div style="padding:12px;text-align:center;color:#d84315;font-weight:600">10 份</div>
+</div>
+<div style="display:grid;grid-template-columns:88px 1fr 72px;font-size:14px;border-bottom:1px solid #ffe0b2">
+<div style="padding:12px;text-align:center;font-weight:bold;color:#e65100">38 赞</div>
+<div style="padding:12px;color:#444">Obulb 球泡灯</div>
+<div style="padding:12px;text-align:center;color:#d84315;font-weight:600">5 份</div>
+</div>
+<div style="display:grid;grid-template-columns:88px 1fr 72px;font-size:14px">
+<div style="padding:12px;text-align:center;font-weight:bold;color:#e65100">68 赞</div>
+<div style="padding:12px;color:#444">Arkfeld Pro</div>
+<div style="padding:12px;text-align:center;color:#d84315;font-weight:600">3 份</div>
+</div>
+</div>
+</div>
+
+<div class="card" style="background:linear-gradient(135deg,#e3f2fd,#bbdefb);border:1px solid #64b5f6">
+<div style="display:flex;align-items:center;gap:14px;margin-bottom:16px">
+<div style="font-size:36px">🤝</div>
 <div>
-<h4>产品体验区</h4>
-<p><strong>时间：</strong>6月11日宣讲会同步开放</p>
-<p><strong>内容：</strong>旗舰手电、球泡灯等明星产品现场试玩</p>
-<p><strong>亮点：</strong>真实户外场景演示，研发同事现场答疑</p>
+<div style="font-size:20px;font-weight:bold;color:#0d47a1">推荐有奖</div>
+<div style="font-size:13px;color:#1565c0;margin-top:2px">推荐成功入职即得</div>
 </div>
 </div>
-<div class="campus">
-<div class="campus-icon">📍</div>
-<div>
-<h4>目标院校</h4>
-<p><strong>专业范围：</strong>不限专业方向，理工、商科、设计、文科等均可</p>
-<p><strong>院校范围：</strong>全国各类本科及以上院校，欢迎对照明行业感兴趣的同学</p>
+<p style="font-size:14px;color:#1a237e;margin:0 0 16px;line-height:1.75">
+<strong>活动规则：</strong>推荐同学投递简历，被推荐人成功入职傲雷科技（不限岗位），推荐人即可获得奖励。
+</p>
+<div style="background:#fff;border-radius:8px;padding:24px 20px;text-align:center;box-shadow:0 1px 3px rgba(0,0,0,0.06)">
+<div style="font-size:13px;color:#666;margin-bottom:8px">推荐奖励</div>
+<div style="font-size:22px;font-weight:bold;color:#0d47a1;margin-bottom:6px">Baton 3 Pro Max</div>
+<div style="display:inline-block;background:#ff5722;color:#fff;font-size:12px;font-weight:600;padding:3px 12px;border-radius:12px;margin-bottom:16px">限量 5 份</div>
+<div style="background:#e3f2fd;border-radius:6px;padding:12px;font-size:13px;color:#1565c0;text-align:left">
+<strong>✓ 兑奖条件：</strong>被推荐人成功入职傲雷科技（不限岗位）
 </div>
 </div>
 </div>
+
+</div>
+<p style="text-align:center;color:#999;font-size:13px;margin-top:18px">* 活动最终解释权归傲雷科技所有</p>
 </section>
 </main>
-<footer class="footer">
-<p>© 2027 深圳市傲雷电商科技股份有限公司　|　<a href="mailto:1071741990@qq.com">1071741990@qq.com</a>　|　HR热线/微信：13434496001</p>
+
+<footer class="footer" id="footer">
+<div style="max-width:1200px;margin:0 auto;line-height:1.8">
+© 2027 深圳市傲雷电商科技股份有限公司&nbsp;&nbsp;|&nbsp;&nbsp;<a href="mailto:1071741990@qq.com" style="color:#fff;text-decoration:underline">1071741990@qq.com</a>&nbsp;&nbsp;|&nbsp;&nbsp;HR热线/微信：13434496001
+</div>
 </footer>
+<script>
+function toggleMenu(){
+document.getElementById('mobileMenu').classList.toggle('active');
+}
+document.querySelectorAll('a[href^="#"]').forEach(a=>{
+a.addEventListener('click',e=>{
+const href=a.getAttribute('href');
+if(!href||href==='#')return;
+const target=document.querySelector(href);
+if(target){
+e.preventDefault();
+target.scrollIntoView({behavior:'smooth',block:'start'});
+history.replaceState(null,'',href);
+}
+document.getElementById('mobileMenu').classList.remove('active');
+});
+});
+</script>
 </body>
 </html>
