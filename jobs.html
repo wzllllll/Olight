@@ -21,7 +21,10 @@ body{margin:0;padding:0;font-family:-apple-system,BlinkMacSystemFont,"Microsoft 
 .dept-section{margin-bottom:48px}
 .dept-title{font-size:22px;color:#1e3a5f;margin:0 0 20px;padding-left:14px;border-left:5px solid #2563eb}
 .job-list{display:grid;grid-template-columns:1fr;gap:18px}
-.job-card{background:#fff;border-radius:12px;padding:24px 26px;box-shadow:0 1px 3px rgba(0,0,0,0.08);border-left:3px solid transparent;transition:all .2s}
+.job-card{background:#fff;border-radius:12px;padding:24px 26px;box-shadow:0 1px 3px rgba(0,0,0,0.08);border-left:3px solid transparent;transition:all .2s;position:relative}
+.apply-btn{display:inline-block;margin-top:16px;padding:8px 18px;background:#16a34a;color:#fff;text-decoration:none;border-radius:6px;font-size:13px;font-weight:500;transition:all .2s;border:1px solid #16a34a}
+.apply-btn:hover{background:#15803d;border-color:#15803d;box-shadow:0 2px 6px rgba(22,163,74,0.3);transform:translateY(-1px)}
+.apply-btn::before{content:"📨 ";margin-right:2px}
 .job-card:hover{box-shadow:0 4px 14px rgba(0,0,0,0.08);border-left-color:#2563eb;transform:translateY(-1px)}
 .job-title{font-size:18px;font-weight:bold;color:#1a56db;margin-bottom:14px;padding-bottom:12px;border-bottom:1px dashed #e5e7eb}
 .jd-block{margin-top:12px}
@@ -94,6 +97,8 @@ body{margin:0;padding:0;font-family:-apple-system,BlinkMacSystemFont,"Microsoft 
 <div class="job-card" data-type="campus" data-title="渠道拓展">
 <div class="job-title">渠道拓展</div>
 <div class="jd-block"><div class="jd-label">岗位职责</div><div class="jd-text">1)依据部门的市场开发策略和计划，负责美国市场线下渠道拓展；<br>2)协助客户相关市场营销类工作，如:展会筹备、客户走访与接待及其他市场拓展事宜；<br>3)维护现有老客户,海外客户发展支持及售后处理。</div></div><div class="jd-block"><div class="jd-label">任职要求</div><div class="jd-text">1、本科及以上学历，具英语沟通能力，专业英语八级以上，能熟练书面和口头交流，能作为工作语言；<br>2、高度的责任心和进取心，目标结果导向；<br>3、良好的团队协作及沟通能力。</div></div>
+
+<a href="https://doc.weixin.qq.com/forms/AIIArwf9AAcAJkAYAZaAFQCNjJ2mBN0df" target="_blank" rel="noopener" class="apply-btn">投递此岗位</a>
 </div>
 </div>
 </section>
@@ -103,9 +108,13 @@ body{margin:0;padding:0;font-family:-apple-system,BlinkMacSystemFont,"Microsoft 
 <div class="job-card" data-type="campus" data-title="外贸销售专员">
 <div class="job-title">外贸销售专员</div>
 <div class="jd-block"><div class="jd-label">岗位职责</div><div class="jd-text">1.负责维护与开发B2B客户全流程；<br>2.公司相关系统的学习已经操作<br>3.协助同事，完成上级交办的任务</div></div><div class="jd-block"><div class="jd-label">任职要求</div><div class="jd-text">1、本科及以上学历，英语听说读写优秀，有小语种最佳；<br>2、业绩导向，强烈的销售意识与自驱力，有外贸B2B实习经验者优先；<br>3、学历能力强，做事严谨麻利，做事有规划；<br>4、良好团队协作能力，逻辑能力强，良好沟通能力。</div></div>
+
+<a href="https://doc.weixin.qq.com/forms/AIIArwf9AAcAJkAYAZaAFQCNjJ2mBN0df" target="_blank" rel="noopener" class="apply-btn">投递此岗位</a>
 </div><div class="job-card" data-type="campus" data-title="亚马逊运营专员">
 <div class="job-title">亚马逊运营专员</div>
 <div class="jd-block"><div class="jd-label">岗位职责</div><div class="jd-text">1，负责Amazon账号正常运营，店铺管理及维护，制定营销计划，上传产品，优化产品页面；严格遵守亚马逊规章制度；<br>2、以业绩目标为导向，定期分析销售数据，及时对销售策略做出调整，完成PBC规定的销售目标；<br>3、调查并分析市场及竞争对手状况，站内广告以及站外推广双管齐下，努力提升产品排名，提高销量，并根据具体情况调整策略；<br>4、负责处理客户问题，提供优质售后客服；<br>5、按时完成上级交办的工作，不拖延不懈怠；</div></div><div class="jd-block"><div class="jd-label">任职要求</div><div class="jd-text">1、全日制本科或以上学历，德语专业四级；<br>2、有亚马逊实习相关工作经验优先；<br>3、主动性强、思维灵活且有逻辑；<br>4、良好的沟通能力和团队合作能力；<br>5、熟练使用Excel（函数、数据透视表）等办公室软件。</div></div>
+
+<a href="https://doc.weixin.qq.com/forms/AIIArwf9AAcAJkAYAZaAFQCNjJ2mBN0df" target="_blank" rel="noopener" class="apply-btn">投递此岗位</a>
 </div>
 </div>
 </section>
@@ -115,30 +124,48 @@ body{margin:0;padding:0;font-family:-apple-system,BlinkMacSystemFont,"Microsoft 
 <div class="job-card" data-type="campus" data-title="海外活动专员">
 <div class="job-title">海外活动专员</div>
 <div class="jd-block"><div class="jd-label">岗位职责</div><div class="jd-text">1. 海外线下活动执行；<br>2. 外联品牌合作；<br>3. IMC 活动协助；</div></div><div class="jd-block"><div class="jd-label">任职要求</div><div class="jd-text">1. 抗压力强，在活动时能跟上紧张节奏；<br>2. 组织沟通协调能力强；<br>3. 认真负责主动</div></div>
+
+<a href="https://doc.weixin.qq.com/forms/AIIArwf9AAcAJkAYAZaAFQCNjJ2mBN0df" target="_blank" rel="noopener" class="apply-btn">投递此岗位</a>
 </div><div class="job-card" data-type="campus" data-title="站外营销（红人BD/PR）">
 <div class="job-title">站外营销（红人BD/PR）</div>
 <div class="jd-block"><div class="jd-label">岗位职责</div><div class="jd-text">1. 红人开发；<br>2. Deal 平台开发；<br>3. 媒体建联；</div></div><div class="jd-block"><div class="jd-label">任职要求</div><div class="jd-text">1. 热爱与人打交道，外部红人及媒体建立持久联系<br>2. 喜欢研究产品和网络视频；<br>3.  善于探索</div></div>
+
+<a href="https://doc.weixin.qq.com/forms/AIIArwf9AAcAJkAYAZaAFQCNjJ2mBN0df" target="_blank" rel="noopener" class="apply-btn">投递此岗位</a>
 </div><div class="job-card" data-type="campus" data-title="文案">
 <div class="job-title">文案</div>
 <div class="jd-block"><div class="jd-label">岗位职责</div><div class="jd-text">1. 产品说明书翻译；<br>2. 产品卖点提炼；<br>3. 产品详情页策划；<br>4. 产品内容策划；<br>5.发布会演讲策划参与</div></div><div class="jd-block"><div class="jd-label">任职要求</div><div class="jd-text">1. 英语语言能力强，有文案写作背景优先<br>2. 认真/仔细喜欢钻研产品；<br>3. 责任心强</div></div>
+
+<a href="https://doc.weixin.qq.com/forms/AIIArwf9AAcAJkAYAZaAFQCNjJ2mBN0df" target="_blank" rel="noopener" class="apply-btn">投递此岗位</a>
 </div><div class="job-card" data-type="intern" data-title="营销专员实习生">
 <div class="job-title">营销专员实习生</div>
 <div class="jd-block"><div class="jd-label">岗位职责</div><div class="jd-text">1. 日常营销工作的执行，包括内容整理、素材准备及活动支持<br>2. 跟进KOL/媒体合作，整理沟通资料与执行进度<br>3. 支持市场活动（线上/线下）的筹备与落地执行<br>4. 进行基础数据整理与效果反馈，协助输出简单复盘</div></div><div class="jd-block"><div class="jd-label">任职要求</div><div class="jd-text">1. 优秀的英语听说读写能力<br>2. 在校本科或研究生，市场营销、传媒、广告、新闻、英语等相关专业优先<br>3. 具有良好的学习能力，对营销和内容创作感兴趣<br>4. 主动、责任心强，良好的团队协作意识</div></div>
+
+<a href="https://doc.weixin.qq.com/forms/AIIArwf9AAcAJkAYAZaAFQCNjJ2mBN0df" target="_blank" rel="noopener" class="apply-btn">投递此岗位</a>
 </div><div class="job-card" data-type="campus" data-title="ID">
 <div class="job-title">ID</div>
 <div class="jd-block"><div class="jd-label">岗位职责</div><div class="jd-text">1.参与公司新产品探索，产品迭代设计；<br>2.配合各部门需求完成产品造型设计；<br>3.配合设计部门同事完成各项外观设计任务； <br>4.负责产品生产所需的CMF，丝印，镭雕等各种设计文档；<br>5.负责公司项目出渲染效果图；产品展示设计等；</div></div><div class="jd-block"><div class="jd-label">任职要求</div><div class="jd-text">1.熟悉基本专业软件，专业理论扎实； <br>2.有一定的DIY动手能力、手绘能力、文案转化能力； <br>3.有审美能力，良好的团队精神，自驱力，强烈的责任感。</div></div>
+
+<a href="https://doc.weixin.qq.com/forms/AIIArwf9AAcAJkAYAZaAFQCNjJ2mBN0df" target="_blank" rel="noopener" class="apply-btn">投递此岗位</a>
 </div><div class="job-card" data-type="intern" data-title="GTM实习生">
 <div class="job-title">GTM实习生</div>
 <div class="jd-block"><div class="jd-label">岗位职责</div><div class="jd-text">1、协助市场洞察及调研；<br>2、参与产品竞争分析；<br>3、协同新品项目管理。</div></div><div class="jd-block"><div class="jd-label">任职要求</div><div class="jd-text">1. 抗压力强，有一定专长；<br>2. 组织沟通协调能力强；<br>3. 对新品上市推广，如何去打造一款爆品有强烈兴趣。</div></div>
+
+<a href="https://doc.weixin.qq.com/forms/AIIArwf9AAcAJkAYAZaAFQCNjJ2mBN0df" target="_blank" rel="noopener" class="apply-btn">投递此岗位</a>
 </div><div class="job-card" data-type="intern" data-title="亚马逊运营实习生">
 <div class="job-title">亚马逊运营实习生</div>
 <div class="jd-block"><div class="jd-label">岗位职责</div><div class="jd-text">1. 协助库存管理、FBA发货<br>2. 整理数据报表<br>3. 协助进行竞品分析<br>4. 售后回复和跟进</div></div><div class="jd-block"><div class="jd-label">任职要求</div><div class="jd-text">1. 英语CET-4以上<br>2. 数据分析能力强<br>3. 认真主动，责任心及学习能力强</div></div>
+
+<a href="https://doc.weixin.qq.com/forms/AIIArwf9AAcAJkAYAZaAFQCNjJ2mBN0df" target="_blank" rel="noopener" class="apply-btn">投递此岗位</a>
 </div><div class="job-card" data-type="campus" data-title="电子工程师">
 <div class="job-title">电子工程师</div>
 <div class="jd-block"><div class="jd-label">岗位职责</div><div class="jd-text">1、参与公司新产品开发设计；<br>2、参与方案选型与电路设计，PCB Layout；<br>3、样机组装与调试；</div></div>
+
+<a href="https://doc.weixin.qq.com/forms/AIIArwf9AAcAJkAYAZaAFQCNjJ2mBN0df" target="_blank" rel="noopener" class="apply-btn">投递此岗位</a>
 </div><div class="job-card" data-type="campus" data-title="结构工程师">
 <div class="job-title">结构工程师</div>
 <div class="jd-block"><div class="jd-label">岗位职责</div><div class="jd-text">1、参与公司新产品开发设计；<br>2、参与结构图纸设计，输出产品工程图，跟进物料打样；<br>3、样机组装与调试；</div></div>
+
+<a href="https://doc.weixin.qq.com/forms/AIIArwf9AAcAJkAYAZaAFQCNjJ2mBN0df" target="_blank" rel="noopener" class="apply-btn">投递此岗位</a>
 </div>
 </div>
 </section>
@@ -148,24 +175,38 @@ body{margin:0;padding:0;font-family:-apple-system,BlinkMacSystemFont,"Microsoft 
 <div class="job-card" data-type="campus" data-title="结构工程师">
 <div class="job-title">结构工程师</div>
 <div class="jd-block"><div class="jd-label">岗位职责</div><div class="jd-text">操作PLM系统<br>样机组装、物料测试、产品测试<br>参与设计及辅助工作</div></div><div class="jd-block"><div class="jd-label">任职要求</div><div class="jd-text">英语6级<br>有申请专利<br>参与产学研课题活动</div></div>
+
+<a href="https://doc.weixin.qq.com/forms/AIIArwf9AAcAJkAYAZaAFQCNjJ2mBN0df" target="_blank" rel="noopener" class="apply-btn">投递此岗位</a>
 </div><div class="job-card" data-type="campus" data-title="电子工程师">
 <div class="job-title">电子工程师</div>
 <div class="jd-block"><div class="jd-label">岗位职责</div><div class="jd-text">操作PLM系统<br>样机组装、电路板焊接、产品测试<br>参与设计及辅助工作</div></div><div class="jd-block"><div class="jd-label">任职要求</div><div class="jd-text">英语6级<br>具备编程能力<br>参与产学研课题活动</div></div>
+
+<a href="https://doc.weixin.qq.com/forms/AIIArwf9AAcAJkAYAZaAFQCNjJ2mBN0df" target="_blank" rel="noopener" class="apply-btn">投递此岗位</a>
 </div><div class="job-card" data-type="campus" data-title="软件工程师">
 <div class="job-title">软件工程师</div>
 <div class="jd-block"><div class="jd-label">岗位职责</div><div class="jd-text">新概念设计工作<br>软件调试及测试</div></div><div class="jd-block"><div class="jd-label">任职要求</div><div class="jd-text">英语6级<br>参与产学研课题活动</div></div>
+
+<a href="https://doc.weixin.qq.com/forms/AIIArwf9AAcAJkAYAZaAFQCNjJ2mBN0df" target="_blank" rel="noopener" class="apply-btn">投递此岗位</a>
 </div><div class="job-card" data-type="campus" data-title="亚马逊运营工程师">
 <div class="job-title">亚马逊运营工程师</div>
 <div class="jd-block"><div class="jd-label">岗位职责</div><div class="jd-text">上架listing,库存管理，广告调整<br>邮件回复</div></div><div class="jd-block"><div class="jd-label">任职要求</div><div class="jd-text">专四及以上，六级<br>具备自主学习能力</div></div>
+
+<a href="https://doc.weixin.qq.com/forms/AIIArwf9AAcAJkAYAZaAFQCNjJ2mBN0df" target="_blank" rel="noopener" class="apply-btn">投递此岗位</a>
 </div><div class="job-card" data-type="intern" data-title="MKT实习生">
 <div class="job-title">MKT实习生</div>
 <div class="jd-block"><div class="jd-label">岗位职责</div><div class="jd-text">协助物料管理，数据收集，项目推进相关工作</div></div><div class="jd-block"><div class="jd-label">任职要求</div><div class="jd-text">英语六级，学校干部任职经验</div></div>
+
+<a href="https://doc.weixin.qq.com/forms/AIIArwf9AAcAJkAYAZaAFQCNjJ2mBN0df" target="_blank" rel="noopener" class="apply-btn">投递此岗位</a>
 </div><div class="job-card" data-type="intern" data-title="站外实习生">
 <div class="job-title">站外实习生</div>
 <div class="jd-block"><div class="jd-label">岗位职责</div><div class="jd-text">开发红人，对接红人合作，数据收集分析</div></div><div class="jd-block"><div class="jd-label">任职要求</div><div class="jd-text">专四及以上，六级</div></div>
+
+<a href="https://doc.weixin.qq.com/forms/AIIArwf9AAcAJkAYAZaAFQCNjJ2mBN0df" target="_blank" rel="noopener" class="apply-btn">投递此岗位</a>
 </div><div class="job-card" data-type="intern" data-title="GTM实习生">
 <div class="job-title">GTM实习生</div>
 <div class="jd-block"><div class="jd-label">岗位职责</div><div class="jd-text">项目管理、产品上市辅助工作、数据收集与分析</div></div><div class="jd-block"><div class="jd-label">任职要求</div><div class="jd-text">英语六级、有干部或大型活动组织经验</div></div>
+
+<a href="https://doc.weixin.qq.com/forms/AIIArwf9AAcAJkAYAZaAFQCNjJ2mBN0df" target="_blank" rel="noopener" class="apply-btn">投递此岗位</a>
 </div>
 </div>
 </section>
@@ -175,12 +216,18 @@ body{margin:0;padding:0;font-family:-apple-system,BlinkMacSystemFont,"Microsoft 
 <div class="job-card" data-type="campus" data-title="SQE">
 <div class="job-title">SQE</div>
 <div class="jd-block"><div class="jd-label">岗位职责</div><div class="jd-text">来料异常的处理，并跟进供应商闭环改善<br>执行品质协议，对供方奖励、处罚和质量问题费用转嫁<br>协助供应商品质改善，推动供应商过程品质提升</div></div><div class="jd-block"><div class="jd-label">任职要求</div><div class="jd-text">熟练使用Word/Excel/PPT等软件<br>优先能够识别机械图纸<br>有强的沟通能力及抗压能力</div></div>
+
+<a href="https://doc.weixin.qq.com/forms/AIIArwf9AAcAJkAYAZaAFQCNjJ2mBN0df" target="_blank" rel="noopener" class="apply-btn">投递此岗位</a>
 </div><div class="job-card" data-type="campus" data-title="认证岗位 体系认证&amp;产品认证方向">
 <div class="job-title">认证岗位 体系认证&amp;产品认证方向</div>
 <div class="jd-block"><div class="jd-label">岗位职责</div><div class="jd-text">对接第三方认证机构、实验室，协调集团产品测试、验厂、整改等全流程工作<br>组织内部审核、验厂准备，推动问题整改，保障认证顺利通过</div></div><div class="jd-block"><div class="jd-label">任职要求</div><div class="jd-text">具备良好的文档编写、资料整理能力，工作认真严谨<br>沟通协调能力强，可高效对接第三方机构、实验室及内部部门</div></div>
+
+<a href="https://doc.weixin.qq.com/forms/AIIArwf9AAcAJkAYAZaAFQCNjJ2mBN0df" target="_blank" rel="noopener" class="apply-btn">投递此岗位</a>
 </div><div class="job-card" data-type="campus" data-title="测试工程师">
 <div class="job-title">测试工程师</div>
 <div class="jd-block"><div class="jd-label">岗位职责</div><div class="jd-text">IQC来料可靠性测试<br>包装可靠性测试<br>跟进来料可靠性与包装可靠性测试问题的关闭</div></div><div class="jd-block"><div class="jd-label">任职要求</div><div class="jd-text">有强的沟通能力<br>熟练使用办公软件<br>能看懂机械图纸，会使用基本的仪器和测量工具</div></div>
+
+<a href="https://doc.weixin.qq.com/forms/AIIArwf9AAcAJkAYAZaAFQCNjJ2mBN0df" target="_blank" rel="noopener" class="apply-btn">投递此岗位</a>
 </div>
 </div>
 </section>
@@ -190,6 +237,8 @@ body{margin:0;padding:0;font-family:-apple-system,BlinkMacSystemFont,"Microsoft 
 <div class="job-card" data-type="campus" data-title="客服专员">
 <div class="job-title">客服专员</div>
 <div class="jd-block"><div class="jd-label">岗位职责</div><div class="jd-text">1、通过在线聊天、邮件等通讯工具快速、准确的解答外国客户的咨询，为客户提供售前咨询,售中支持,售后服务；<br>2、准确记录并反馈各种客户信息，善于抓住客户问题点，能快速高效帮客户解决问题，提升客户体验感；<br>3、梳理工作流程，整体回复模板，补充完善客服知识库；<br>4、协助团队完成其他相关事务</div></div><div class="jd-block"><div class="jd-label">任职要求</div><div class="jd-text">1. 具有较强的法语语能力，法语听说读写流利，法语专四，有专八证书优先<br>2. 良好的沟通协调能力，能灵活处理遇到的客诉问题<br>3. 具有较强的抗压能力<br>4. 具有较强的主动性和独立解决问题的能力，及时反馈，善于提案，敢于尝试；<br>5. 具有团队精神和责任心，和团队共同进步、共同成长！</div></div>
+
+<a href="https://doc.weixin.qq.com/forms/AIIArwf9AAcAJkAYAZaAFQCNjJ2mBN0df" target="_blank" rel="noopener" class="apply-btn">投递此岗位</a>
 </div>
 </div>
 </section>
@@ -199,9 +248,13 @@ body{margin:0;padding:0;font-family:-apple-system,BlinkMacSystemFont,"Microsoft 
 <div class="job-card" data-type="campus" data-title="管理会计">
 <div class="job-title">管理会计</div>
 <div class="jd-block"><div class="jd-label">岗位职责</div><div class="jd-text">1. 跨境物流与关税对接核算：协助完成头程、尾程物流费用核对、票据整理及基础账务录入，配合做好关税相关资料归集，保障物流与关税账务流程规范。<br>2. 全渠道收入与应收管理：负责第三方平台、自建站收入数据核对及确认，回款入账，应收对账及款项催收等。<br>3.部门费用审核与基础账务：按照公司财务制度，完成对接部门费用合规性、真实性初审以及后续入账工作；</div></div><div class="jd-block"><div class="jd-label">任职要求</div><div class="jd-text">1. 专业学历基础：本科及以上学历，财会、财务管理、审计等相关专业，2027届应届生，具备扎实的财务专业基础知识。<br>2. 实操技能要求：熟练使用Office办公软件，精通Excel基础数据处理，能快速上手基础财务软件；持有初级会计资格证书优先，熟悉基础会计核算流程。<br>3. 素养与潜力：做事细心严谨、责任心强，执行力与学习能力突出，沟通顺畅，严守财务保密制度，愿意深耕跨境财务领域长期发展。</div></div>
+
+<a href="https://doc.weixin.qq.com/forms/AIIArwf9AAcAJkAYAZaAFQCNjJ2mBN0df" target="_blank" rel="noopener" class="apply-btn">投递此岗位</a>
 </div><div class="job-card" data-type="campus" data-title="S&amp;OP计划工程师">
 <div class="job-title">S&amp;OP计划工程师</div>
 <div class="jd-block"><div class="jd-label">岗位职责</div><div class="jd-text">对接销售部门，基于销售预测推导需求计划并与销售部门打合<br>将需求计划与工厂PMC打合、跟进工厂的交付完成<br>发货计划：将完工的成品发往海外并确保在途数量的准确性</div></div><div class="jd-block"><div class="jd-label">任职要求</div><div class="jd-text">大学课程有供应链管理、物流管理、统计、国际物流、市场营销等课程（至少需要一种）<br>对数据敏感，精通excel，熟悉ERP者优先<br>善于沟通，需要与销售和工厂部门对接</div></div>
+
+<a href="https://doc.weixin.qq.com/forms/AIIArwf9AAcAJkAYAZaAFQCNjJ2mBN0df" target="_blank" rel="noopener" class="apply-btn">投递此岗位</a>
 </div>
 </div>
 </section>
@@ -211,15 +264,23 @@ body{margin:0;padding:0;font-family:-apple-system,BlinkMacSystemFont,"Microsoft 
 <div class="job-card" data-type="campus" data-title="产品经理">
 <div class="job-title">产品经理</div>
 <div class="jd-block"><div class="jd-label">岗位职责</div><div class="jd-text">调研业务需求，完成需求分析，提出解决方案；<br>输出产品说明书等相关文档，对需求部门进行产品使用及功能培训；<br>完成上级交代的其他工作</div></div><div class="jd-block"><div class="jd-label">任职要求</div><div class="jd-text">1、会使用项目管理和原型绘制工具；<br>2、沟通能力：能够精准识别沟通的情景，通过多种沟通方式，与别人在愉快的氛围中达成共识，并且能积极引导别人的思路；<br>3、逻辑分析：能够对较复杂的业务情境和问题迅速分析关键点，知道问题产生的本质，并能形成有效的解决方案。</div></div>
+
+<a href="https://doc.weixin.qq.com/forms/AIIArwf9AAcAJkAYAZaAFQCNjJ2mBN0df" target="_blank" rel="noopener" class="apply-btn">投递此岗位</a>
 </div><div class="job-card" data-type="campus" data-title="测试工程师">
 <div class="job-title">测试工程师</div>
 <div class="jd-block"><div class="jd-label">岗位职责</div><div class="jd-text">1、协助测试工程师完成功能测试、回归测试，编写测试用例并执行<br>2、参与需求评审，梳理业务逻辑，及时反馈测试过程中发现的缺陷与风险<br>3、利用工具Fiddler抓包分析，辅助定位问题</div></div><div class="jd-block"><div class="jd-label">任职要求</div><div class="jd-text">1、了解软件测试基础理论，熟悉功能测试流程，有接口测试或 Web/APP 测试经验者优先<br>2、掌握至少一种抓包 / 接口测试工具（如 Fiddler、Postman、JMeter），能看懂 HTTP/HTTPS 请求<br>3、责任心强，具备良好的沟通表达与团队协作意识，能快速适应工作节奏</div></div>
+
+<a href="https://doc.weixin.qq.com/forms/AIIArwf9AAcAJkAYAZaAFQCNjJ2mBN0df" target="_blank" rel="noopener" class="apply-btn">投递此岗位</a>
 </div><div class="job-card" data-type="campus" data-title="网络、桌面运维">
 <div class="job-title">网络、桌面运维</div>
 <div class="jd-block"><div class="jd-label">岗位职责</div><div class="jd-text">1、配合管理与维护网络设备正常运行，<br>2、公司内部电脑维护、桌面技术支持:<br>3、内部系统:存储、广播、文印、AD域等维护;<br>4、日常网络或硬件设备巡检及异常处理；上级交待的其他相关工作。</div></div><div class="jd-block"><div class="jd-label">任职要求</div><div class="jd-text">1、了解常用网络设备的协议及工作原理，可以配合网络设备调试<br>2、熟悉电脑的使用、系统优化，及时响应处理电脑/桌面需求。<br>3、思维敏捷，条理清晰，有较强的口头表达能力，易于与同事、上下级沟通交流;<br>4、工作踏实，具有团队精神和良好的职业素养;</div></div>
+
+<a href="https://doc.weixin.qq.com/forms/AIIArwf9AAcAJkAYAZaAFQCNjJ2mBN0df" target="_blank" rel="noopener" class="apply-btn">投递此岗位</a>
 </div><div class="job-card" data-type="campus" data-title="BI工程师">
 <div class="job-title">BI工程师</div>
 <div class="jd-block"><div class="jd-label">岗位职责</div><div class="jd-text">1.开发可视化报表<br>2.梳理业务诉求<br>3.跟进开发进度</div></div><div class="jd-block"><div class="jd-label">任职要求</div><div class="jd-text">1、熟悉SQL操作<br>2、熟悉电脑常规软件的操作<br>3、逻辑强、沟通能力强、性格开朗</div></div>
+
+<a href="https://doc.weixin.qq.com/forms/AIIArwf9AAcAJkAYAZaAFQCNjJ2mBN0df" target="_blank" rel="noopener" class="apply-btn">投递此岗位</a>
 </div>
 </div>
 </section>
@@ -254,6 +315,7 @@ function applyFilter(){
     const matchKw=(!kw||text.includes(kw));
     if(matchType&&matchKw){c.style.display='';total++;}else{c.style.display='none';}
   });
+  // 隐藏空 section
   sections.forEach(s=>{
     const has=s.querySelectorAll('.job-card:not([style*="none"])').length>0;
     s.style.display=has?'':'none';
